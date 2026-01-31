@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>业余无线电 A 类题库练习系统</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>业余无线电 A 类题库练习系统</h1>
+            <div class="stats" id="stats"></div>
+        </header>
+
+        <nav class="mode-selector">
+            <button class="mode-btn active" data-mode="random">随机练习</button>
+            <button class="mode-btn" data-mode="new">新题练习</button>
+            <button class="mode-btn" data-mode="wrong">错题练习</button>
+        </nav>
+
+        <main>
+            <div class="question-container" id="questionContainer"></div>
+            <div class="controls">
+                <button class="btn primary" id="submitBtn" disabled>提交答案</button>
+                <button class="btn secondary" id="nextBtn" disabled>下一题</button>
+                <button class="btn secondary" id="refreshBtn">刷新题目</button>
+            </div>
+            <div class="result" id="result"></div>
+        </main>
+    </div>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>
