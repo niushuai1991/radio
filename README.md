@@ -28,8 +28,12 @@ source .venv/bin/activate  # Linux/Mac
 ### 启动服务
 
 ```bash
-# 启动 Web 服务
+# 启动 Web 服务（默认端口 8000）
 uv run python run.py
+
+# 指定端口和主机
+uv run python run.py --port 3000
+uv run python run.py --host 127.0.0.1 --port 9000
 
 # 访问 http://localhost:8000
 ```
